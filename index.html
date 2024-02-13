@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta chaset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+      <title>Formulário de Pesquisa - Clinica Veterinária Dr. Sushi</title>
+    </head>
+
+    <body>
+
+      <!-- Cabeçario --> 
+      <div class="topo">
+        <h1 id="title">Formulário de Pesquisa</h1>
+        <h2>Clinica Veterinária Dr. Sushi</h2>
+        <p id="description"><i>Responda o formulário abaixo para conhecermos melhor seu animalzinho</i></p>
+      </div>
+
+      <form id="survey-form" method="post" action='#'>
+
+        <!-- Informações sobre o Tutor -->
+        <div class="tutor">
+
+          <div class="elemento-form">
+            <label for="name" id="name-label">Tutor:</label>
+            <input type="text" id="name" placeholder="Nome completo" required />
+          </div>
+  
+          <div class="elemento-form">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" required />
+          </div>
+  
+          <div class="elemento-form">
+            <label for="email" id="email-label">E-mail:</label>
+            <input type="email" id="email" placeholder="Digite um e-mail" required />
+          </div>
+            
+          <div class="elemento-form">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco"/>
+          </div>
+  
+        </div>
+        
+        <!-- Informações sobre o paciente -->
+        <div class="paciente">
+          <div class="elemento-form">
+            <label for="nome-paciente">Paciente:</label>
+            <input type="text" id="nome-paciente"/>
+          </div>
+
+          <div class="especie">
+            <label class="negrito">Espécie:</label>
+            <div>
+              <label><input name="raca" value="cachorro" type="radio" checked/> Cachorro</label>
+              <label><input name="raca" value="gato" type="radio"/> Gato</label>
+              <label><input name="raca" value="outro" type="radio"/> Outro <input type="text"></label>
+            </div>
+
+          </div>
+          
+          <div class="elemento-form">
+            <label for="raca-animal" class="negrito">Raça:</label>
+            <input type="text" id="raca-animal"/>
+          </div>
+
+          <div class="inline">
+            <div class="inline-itens">
+              <label for="sexo" class="negrito">Sexo:</label>
+              <select>
+                <option id="sexo" value="femea">Fêmea</option>
+                <option id="sexo" value="macho">Macho</option>
+              </select>
+            </div>
+
+            <div class="inline-itens">
+              <label for="peso" >Peso: <input type="number" min="0" max="70" id="peso"/></label>
+            </div>
+
+            <div class="inline-itens">
+              <label for="number" id="number-label">Idade: <input type="number"  id="number" min="0" max="25" placeholder="Em anos"/></label>
+            </div>
+            
+          </div>
+
+        </div>
+
+        <!-- Informações sobre alimentação -->
+
+        <div class="alimentacao">
+          <div class="tipo-alimento">
+            <div>
+              <label for="food-type" class="negrito">Quais alimentos ele consome?</label>
+            </div>
+            <div>
+              <input type="checkbox" id="food-type" value="seca"/> Ração seca comercial
+            </div>
+            <div>
+              <input type="checkbox" id="food-type" value="umida"/> Ração úmida comercial
+            </div>
+            <div>
+              <input type="checkbox" id="food-type" value="caseira"/> Alimento caseiro
+            </div>
+          </div>
+  
+          <div class="qtd-alimento">
+            <label for="dropdown" class="negrito">Quantas refeições ao dia? 
+              <select id="dropdown">
+                <option value="0">Escolha uma opção</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4ou+">4 ou mais</option>
+              </select>
+            </label>
+          </div>
+        </div>          
+
+        <!-- Informações sobre saúde -->
+
+        <div class="saude">
+          <div class="espacamento-simples">
+            <label for="doenca" class="negrito">Possui alguma doença pré existente?
+              <select id="doenca">
+                <option value="escolha">Escolha uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </label>
+          </div>
+  
+          <div class="elemento-form">
+            <label for="tipodoenca">Se sim, qual(is)?</label>
+            <input type="text" id="tipodoenca"/>
+          </div>
+  
+          <div>
+            <div class="vacina">
+              <label for="vacinacao">É vacinado?</label>
+                <select id="vacinacao">
+                  <option value="escolha">Escolha uma opção</option>
+                  <option value="sim">Sim</option>
+                  <option value="nao">Não</option>
+                </select>                    
+            </div>
+            <div class="elemento-form">
+              <label for="tipovacina">Se sim, qual(is)?</label>
+              <input type="text" id="tipovacina"/>
+            </div>
+          </div>
+          
+          <div class="espacamento-simples negrito">
+            <label for="vermifugo">Última vez que tomou vermífugo</label>
+            <input type="date" id="vermifugo"/>
+          </div>
+            
+          <div class="espacamento-simples negrito">
+            <label for="antipulgas">Última vez que aplicou antipulgas</label>
+            <input type="date" id="antipulgas"/>
+          </div>
+  
+          <div class="elemento-form">
+            <p for="analise">Análise do paciente</p>
+            <textarea id="analise" name="analise" rows="6"></textarea>
+          </div>
+
+          <div class="elemento-form">
+            <p for="exames">Exames, procedimentos realizados e medicamentos</p>
+            <textarea id="exames" name="exames" rows="6"></textarea>
+          </div>
+  
+          <div class="espacamento-simples negrito">
+            <label for="dataatendimento">Data da consulta</label>
+            <input type="date" id="dataatendimento"/>
+          </div>
+
+        </div>
+        
+        <!-- Botão enviar -->
+        <div class="botao">
+          <input type="submit" id="submit" name="submit" value="Salvar"/>
+        </div>
+
+      </form>
+
+    </body>
+    
+  </html>

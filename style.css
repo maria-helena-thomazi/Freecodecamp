@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #49708a;
+}
+
+form {
+    background-color: #ebf7f8;
+    color: #49708a;
+    width: 600px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+
+label {
+    margin: 0.5rem 0;
+}
+
+select, input[type="date"]  {
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #88abc2;
+    border-radius: 3px;
+    color: #88abc2;
+}
+
+input[type="submit"] {
+    width: 50%;
+    min-width: 150px;
+    height: 40px;
+    display: block;
+    margin: 1em auto;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #49708a;
+    border: 1px solid #49708a;
+    border-radius: 8px;
+    color: #ebf7f8;
+}
+
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #88abc2;
+    border-radius: 3px;
+    color: #88abc2;
+}
+
+.espacamento-simples {
+    margin-top: 10px;
+}
+
+.negrito {
+    font-weight: 500;
+}
+
+.topo {
+    text-align: center;
+    margin: 40px auto 30px;
+    width: 600px;
+    color: #ebf7f8;
+}
+
+.tutor, .paciente, .alimentacao, .saude {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #88abc2;
+}
+
+.elemento-form {
+    font-weight: 500;
+    display: grid;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.especie {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.especie input[type="radio"] {
+    margin-left: 25px;
+}
+
+.especie input[type="text"] {
+    margin-left: 10px;
+}
+
+.inline {
+    display: flex;
+    margin-top: 15px;
+}
+
+.inline-itens {
+    width: 200px;
+    font-weight: 500;
+}
+
+.inline-itens input[type="number"] {
+    width: 120px;
+}
+
+.tipo-alimento {
+    margin-bottom: 15px;
+}
+
+.tipo-alimento input[type="checkbox"] {
+    margin: 10px;
+}
+
+.qtd-alimento {
+    padding: 0 0 5px;
+}
+
+.vacina {
+    display: block;
+    margin: 10px auto;
+}
